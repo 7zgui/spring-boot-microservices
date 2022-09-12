@@ -16,7 +16,7 @@ import java.util.UUID;
 public class BeerController {
 
     private BeerService beerService;
-    
+
     public BeerController(BeerService beerService){
         this.beerService=beerService;
     }
