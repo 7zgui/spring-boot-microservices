@@ -16,7 +16,13 @@ public class CustomerServiceImp implements CustomerService{
     }
 
     @Override
-    public CustomerDto save(UUID customer_id, CustomerDto customerDto) {
+    public CustomerDto saveCustomer(UUID customer_id, CustomerDto customerDto) {
+        //todo real implementation
+        return null;
+    }
+
+    @Override
+    public CustomerDto putCustomer(UUID customerId, CustomerDto customerDto) {
         //todo real implementation
         return null;
     }

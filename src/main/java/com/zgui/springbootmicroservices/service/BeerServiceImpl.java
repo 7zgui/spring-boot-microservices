@@ -10,7 +10,6 @@ import java.util.UUID;
  */
 @Service
 public class BeerServiceImpl implements BeerService {
-    private BeerService beerService;
 
     @Override
     public BeerDto getBeerById(UUID beerId) {
@@ -19,6 +18,12 @@ public class BeerServiceImpl implements BeerService {
 
     @Override
     public BeerDto saveBeer(UUID beerId, BeerDto beerDto) {
+        //todo real implementation
+        return null;
+    }
+
+    @Override
+    public BeerDto putBeer(UUID beerId, BeerDto beerDto) {
         //todo real implementation
         return null;
     }

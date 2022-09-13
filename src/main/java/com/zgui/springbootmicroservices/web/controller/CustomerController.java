@@ -27,7 +27,12 @@ public class CustomerController {
 
     @PostMapping(value="/{customerId}")
     ResponseEntity<CustomerDto> saveCustomer(@PathVariable("customerId") UUID customer_id,@RequestBody CustomerDto customerDto){
-        return new ResponseEntity<>(this.customerService.save(customer_id,customerDto),HttpStatus.CREATED);
+        return new ResponseEntity<>(this.customerService.saveCustomer(customer_id,customerDto),HttpStatus.CREATED);
+    }
+
+    @PutMapping(value="/{customerId}")
+    ResponseEntity<CustomerDto> putCustomer(@PathVariable(value = "customerId") UUID customerId,CustomerDto customerDto){
+        return new ResponseEntity<>(this.customerService.putCustomer(customerId,customerDto),HttpStatus.NO_CONTENT);
     }
     
 }

@@ -30,4 +30,9 @@ public class BeerController {
     ResponseEntity<BeerDto> saveBeer(@PathVariable(value = "beerId") UUID beerId, @RequestBody BeerDto beerDto){
         return new ResponseEntity<>(beerService.saveBeer(beerId,beerDto),HttpStatus.CREATED);
     }
+
+    @PutMapping(value="/{beerId}")
+    ResponseEntity<BeerDto> putBeer(@PathVariable(value = "beerId") UUID beerId,@RequestBody BeerDto beerDto){
+        return new ResponseEntity<>(beerService.putBeer(beerId,beerDto),HttpStatus.NO_CONTENT);
+    }
 }
