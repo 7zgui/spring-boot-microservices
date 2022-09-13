@@ -26,4 +26,11 @@ public class CustomerServiceImp implements CustomerService{
         //todo real implementation
         return null;
     }
+
+    @Override
+    public void deleteCustomer(UUID customerId) {
+        //todo real implementation
+    }
+
+
 }

@@ -34,5 +34,11 @@ public class CustomerController {
     ResponseEntity<CustomerDto> putCustomer(@PathVariable(value = "customerId") UUID customerId,CustomerDto customerDto){
         return new ResponseEntity<>(this.customerService.putCustomer(customerId,customerDto),HttpStatus.NO_CONTENT);
     }
+
+    @DeleteMapping(value="/{customerId}")
+    ResponseEntity deleteCustomer(@PathVariable(value="customerId") UUID customerId){
+        //todo
+        return null;
+    }
     
 }

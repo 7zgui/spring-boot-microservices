@@ -27,4 +27,9 @@ public class BeerServiceImpl implements BeerService {
         //todo real implementation
         return null;
     }
+
+    @Override
+    public void deleteBeer(UUID beerId) {
+        //todo real implementation
+    }
 }

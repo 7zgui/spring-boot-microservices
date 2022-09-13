@@ -35,4 +35,10 @@ public class BeerController {
     ResponseEntity<BeerDto> putBeer(@PathVariable(value = "beerId") UUID beerId,@RequestBody BeerDto beerDto){
         return new ResponseEntity<>(beerService.putBeer(beerId,beerDto),HttpStatus.NO_CONTENT);
     }
+
+    @DeleteMapping(value = "/{beerId}")
+    ResponseEntity deleteBeer(@PathVariable(value="beerId") UUID beerId){
+        //todo
+        return null;
+    }
 }
