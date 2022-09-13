@@ -14,4 +14,10 @@ public class CustomerServiceImp implements CustomerService{
     public CustomerDto getCustomerById(UUID customerId) {
         return CustomerDto.builder().customerId(customerId).customerName("ouokki").build();
     }
+
+    @Override
+    public CustomerDto save(UUID customer_id, CustomerDto customerDto) {
+        //todo real implementation
+        return null;
+    }
 }
